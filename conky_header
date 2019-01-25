@@ -1,0 +1,32 @@
+conky.config = {
+--######################################################################################
+--##  Conky by http://gnome-look.org/content/show.php/conky+gray?content=155967     ####
+--##  Modified by    :   http://www.NoobsLab.com                                    ####
+--######################################################################################
+
+	double_buffer = true,
+	own_window_class = 'conky',
+	own_window = true,
+	own_window_type = 'conky',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+--	border_margin = '3',
+	draw_shades = true,
+	gap_x = 0,
+	gap_y = 5,
+	alignment = 'top_left',
+	update_interval = 1,
+	default_color = '#ffffff',
+	own_window_colour = '#000000',
+	use_xft = true,
+	font = 'sans:size=11',
+	override_utf8_locale = true,
+	use_spacer = 'none',
+	minimum_width = 1680, minimum_height = 0,
+};
+
+conky.text = [[
+${goto 5}Date: ${color 5792FF}${font sans:size=11}${time %d/%m/%y}${color}${font}  Time: ${color 5792FF}${font sans:size=11}${time %H:%M}${color}${font}  |  Kernel: ${color 5792FF}${font sans:size=11}$kernel${color}${font}  Uptime: ${color 5792FF}${font sans:size=11}${uptime_short}${color}${font}  |  Cpu: ${color 5792FF}${font sans:size=11}${cpu}%${color}${font}  Ram: ${color 5792FF}${font sans:size=11}${memperc}%${color}${font}  Swap: ${color 5792FF}${font sans:size=11}${swapperc}%${color}${font} |  ${color}${font}Hdd:${color 5792FF}${font sans:size=11} ${fs_used_perc /}% ${fs_used /} / ${fs_size /}${color}${font} | Local ip ${color 5792FF}${font sans:size=11}${addr }${font}${color} | ${color} Network: ${color 82BA00}Up :${color} ${color 5792FF}${upspeed en0} kb/s${color}  ${color 82BA00}Down :${color} ${color 5792FF}${downspeed en0} kb/s${color} ${color 82BA00}Total :${color} ${color 5792FF}${totaldown en0}${color}
+]];
